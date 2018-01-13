@@ -1,0 +1,5 @@
+.env
+scripts/**
+config/**
+src/registerServiceWorker.js
+node_modules/**

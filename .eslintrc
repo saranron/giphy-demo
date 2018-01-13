@@ -1,0 +1,35 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+      "browser": true,
+      "node": true,
+      "jest": true,
+      "es6": true,
+  },
+  "extends": ["airbnb"],
+  "plugins": [
+    "redux-saga",
+    "react",
+    "jsx-a11y",
+  ],
+  "parserOptions": {
+    ecmaVersion: 6,
+    ecmaFeatures: {
+        jsx: true,
+    },
+    sourceType: "module"
+  },
+  "rules": {
+    "react/forbid-prop-types": 0,
+    "react/require-default-props": 0,
+    "react/jsx-filename-extension": 0,
+    "require-yield": 0,
+    "react/prefer-stateless-function": 0,
+    "no-unused-vars": 1,
+    "no-debugger": 1,
+    "indent": 1,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/interactive-supports-focus": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+  },
+}
