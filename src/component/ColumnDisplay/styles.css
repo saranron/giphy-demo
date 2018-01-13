@@ -1,0 +1,17 @@
+.column-display {
+  display: flex;
+  justify-content: center;
+}
+
+.column-display__column {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.column-display__column + .column-display__column {
+  margin-left: 10px;
+}
+
+.column-display__column__item {
+  margin-bottom: 10px;
+}

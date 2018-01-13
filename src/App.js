@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import SearchBar from './component/SearchBar';
+import ColumnDisplay from './component/ColumnDisplay';
 import { getTrendingGifs, searchGifs } from './api';
 import actions from './action';
 import { GifObjectShape } from './App.constants';
@@ -38,7 +39,7 @@ class App extends Component {
           <SearchBar onSearch={this.onSearch} />
         </div>
         <div className="app-body">
-
+          <ColumnDisplay gifs={this.props.gifs} />
         </div>
       </div>
     );
