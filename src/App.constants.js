@@ -21,3 +21,5 @@ export const PaginationObjectShape = PropTypes.shape({
   total_count: PropTypes.number,
   offset: PropTypes.number,
 });
+
+export const PAGE_LIMIT = 50;

@@ -1,11 +1,41 @@
 .app {
-  margin-top: 20px;
+  margin: 0 auto;
+  width: 830px;
+  color: #fff;
 }
 
 .app-header {
+  margin-top: 20px;
   text-align: center;
 }
 
 .app-body {
-  margin: 20px 40px;
+  margin: 20px auto;
+}
+
+.app-body__trending-title {
+  color: #cecece;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.app-body__query {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.app-body__count {
+  display: inline-block;
+  color: #cecece;
+}
+
+.app-footer {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.app-footer__button {
+  cursor: pointer;
 }

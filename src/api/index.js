@@ -19,15 +19,15 @@ const constructApiRoute = (path, queryParams) => {
     }, endpoint);
 };
 
-export const getTrendingGifs = (offset) => {
-  const queryParams = { offset };
+export const getTrendingGifs = (offset, limit) => {
+  const queryParams = { offset, limit };
   const route = constructApiRoute(GET_TRENDING_PATH, queryParams);
   return fetch(route)
     .then((res) => res.json());
 };
 
-export const searchGifs = (queryString, offset) => {
-  const queryParams = { q: queryString, offset };
+export const searchGifs = (queryString, offset, limit) => {
+  const queryParams = { q: queryString, offset, limit };
   const route = constructApiRoute(SEARCH_PATH, queryParams);
   return fetch(route)
     .then((res) => res.json());

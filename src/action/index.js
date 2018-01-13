@@ -7,6 +7,12 @@ const setLoading = (isLoading = true) => {
   };
 };
 
+const resetGifs = () => {
+  return {
+    type: actions.RESET_GIFS,
+  }
+};
+
 const updateGifs = ({ data, pagination } = {}) => {
   return {
     type: actions.UPDATE_GIFS,
@@ -17,5 +23,6 @@ const updateGifs = ({ data, pagination } = {}) => {
 
 export default {
   setLoading,
+  resetGifs,
   updateGifs,
 };
