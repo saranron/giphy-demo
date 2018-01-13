@@ -1,0 +1,20 @@
+.search-bar .search-bar__input {
+  font-size: 16px;
+  padding: 4px 10px;
+  width: 200px;
+}
+
+.search-bar .search-bar__button {
+  font-size: 16px;
+  padding: 4px 10px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.search-bar .search-bar__button:hover {
+  background-color: #cecece;
+}
+
+.search-bar__input + .search-bar__button {
+  border-left: 1px solid #000000;
+}
